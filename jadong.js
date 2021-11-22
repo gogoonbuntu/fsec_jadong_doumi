@@ -26,7 +26,7 @@ function jadongskip(){
 		var e11 = new KeyboardEvent('keydown',{'keyCode':32,'which':32});
 		setTimeout(()=>{var e22 = new KeyboardEvent('keydown',{'keyCode':32,'which':32});},500);
 
- 	contf.getElementById('nextBtn').click();
+ 		contf.getElementById('nextBtn').click();
 		setTimeout(()=>{jadongskip()},2000);},resultsec)
 }
 
