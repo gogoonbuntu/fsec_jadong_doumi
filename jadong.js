@@ -1,7 +1,10 @@
 function jadongskip(){
 
 //자주 쓰이는 엘리먼트 지정하기
-contf = document.getElementById('contentFrm').contentWindow.document;
+_contf = document.getElementById('contentFrm') 
+	|| document.getElementById('lectureFrame').contentWindow.document.getElementById('contentFrm');
+	
+contf = _contf.contentWindow.document;
 
 //잘 읽어왔는지 확인
 console.log('contentFrm = ',document.getElementById('contentFrm'));
