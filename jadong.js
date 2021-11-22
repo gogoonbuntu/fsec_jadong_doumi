@@ -1,4 +1,5 @@
 function jadongskip(){
+
 //자주 쓰이는 엘리먼트 지정하기
 contf = document.getElementById('contentFrm').contentWindow.document;
 
@@ -16,7 +17,15 @@ resultsec = mymsec-mypsec
 console.log('msec, psec, result', mymsec, mypsec, resultsec)
 
 //이 시간 뒤 다음을 클릭하고, 함수 재실행
-setTimeout(()=>{contf.getElementById('nextBtn').click();setTimeout(()=>{jadongskip()},2000);},resultsec)
+setTimeout(
+()=>{
+	// 경고창 스킵을 위한 스페이스바 누르기
+	var e11 = new KeyboardEvent('keydown',{'keyCode':32,'which':32});
+	var e22 = new KeyboardEvent('keydown',{'keyCode':32,'which':32});
+	setTimeout(()=>{var e22 = new KeyboardEvent('keydown',{'keyCode':32,'which':32});},500);
+	
+  contf.getElementById('nextBtn').click();
+	setTimeout(()=>{jadongskip()},2000);},resultsec)
 }
 
 //출발!
