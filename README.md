@@ -11,6 +11,14 @@ Ctrl Shift i 혹 F12 로 개발자 도구 열고
 콘솔에 해당 스크립트 (jadong.js) 붙여넣고 엔터 누르면 됩니다!
 
 
+
+보통 첫장만 html구성이 달라서 상황에 따라 실행이 안될수도 있는데,
+
+몇초 후 다음 페이지에서 시도해보세요.
+
+
+
+
 ![image](https://user-images.githubusercontent.com/34636395/142792119-4d75aa3b-8f46-43b3-87e7-c09df97ef127.png)
 
 
