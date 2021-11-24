@@ -11,13 +11,13 @@ function jadongskip(){
 	console.log('totime = ',contf.getElementById('totime'));
 
 	//몇초 뒤 버튼 누를지 시간 계산
-	mytime = contf.getElementById('totime').innerHTML
-	mymsec=(parseInt(mytime.substring(2,4))*60+parseInt(mytime.substring(5,)))*1000+1000;
-	passtime = contf.getElementById('cutime').innerHTML
-	console.log('passtime', passtime)
-	mypsec=(parseInt(passtime.substring(0,2))*60+parseInt(passtime.substring(3,)))*1000;
-	resultsec = mymsec-mypsec
-	console.log('msec, psec, result', mymsec, mypsec, resultsec)
+	videoEndTime = contf.getElementById('totime').innerHTML
+	millisec=(parseInt(videoEndTime.substring(2,4))*60+parseInt(videoEndTime.substring(5,)))*1000+1000;
+	currenttime = contf.getElementById('cutime').innerHTML
+	console.log('currenttime', currenttime)
+	currentmillisec=(parseInt(currenttime.substring(0,2))*60+parseInt(currenttime.substring(3,)))*1000;
+	resultsec = millisec-currentmillisec
+	console.log('msec, psec, result', millisec, cur3rentmillisec, resultsec)
 
 	//이 시간 뒤 다음을 클릭하고, 함수 재실행
 	setTimeout(
