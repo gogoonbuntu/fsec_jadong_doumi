@@ -17,7 +17,7 @@ function jadongskip(){
 	console.log('currenttime', currenttime)
 	currentmillisec=(parseInt(currenttime.substring(0,2))*60+parseInt(currenttime.substring(3,)))*1000;
 	resultsec = millisec-currentmillisec
-	console.log('msec, psec, result', millisec, cur3rentmillisec, resultsec)
+	console.log('msec, psec, result', millisec, currentmillisec, resultsec)
 
 	//이 시간 뒤 다음을 클릭하고, 함수 재실행
 	setTimeout(
